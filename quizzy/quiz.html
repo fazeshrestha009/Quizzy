@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizzy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="difficulty-selection">
+      <h1>Select Difficulty</h1>
+      <button onclick="initiateQuiz('easy')">Easy</button>
+      <button onclick="initiateQuiz('medium')">Medium</button>
+      <button onclick="initiateQuiz('hard')">Hard</button>
+    </div>
+    <div id="quiz-container" class="hidden">
+      <h2 id="question-number"></h2>
+      <p id="question-text"></p>
+      <div id="options-container"></div>
+      <button id="submit-btn" onclick="submitbtn()">Submit Answer</button>
+    </div>
+    <div id="result-container" class="hidden">
+      <h2>Quiz Finished</h2>
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
+
